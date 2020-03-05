@@ -1,16 +1,12 @@
 # -*- coding: utf-8 -*-
 
+import asyncio
 import functools
 import pkg_resources
 import sys
 import threading
 import weakref
 from time import time
-
-try:
-    import asyncio
-except (ImportError, SyntaxError):
-    asyncio = None
 
 
 __author__ = "Martin Larralde"
